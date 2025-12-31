@@ -9,17 +9,17 @@ class conexionBD
     public function conexionPDO()
     {
 
-        $host = "localhost";
-        $usuario = "root";
-        $contrasena = "";
-        $puerto = "3306";
-        $dbname = "tailwind";
-
         // $host = "localhost";
-        // $usuario = "u427011002_root";
-        // $contrasena = "fLt0838vFso8#";
+        // $usuario = "root";
+        // $contrasena = "";
         // $puerto = "3306";
-        // $dbname = "u427011002_mqpseguros";
+        // $dbname = "tailwind";
+
+        $host = "72.61.79.47";
+        $usuario = "latam";
+        $contrasena = "HS5pWcQ6aWKZHY";
+        $puerto = "3306";
+        $dbname = "crmlatam";
 
         try {
 
