@@ -206,7 +206,7 @@ for ($i = 0; $i < count($lista); $i++) {
     $dato .= $consultaMD;
 }
 
-$ACE = new Envio_correo_notificacion_acceso();
-$consulta2 = $ACE->realizar_envio_correo_notificacion_acceso($idCliente, $cedula, $estado_bayer);
+// $ACE = new Envio_correo_notificacion_acceso();
+// $consulta2 = $ACE->realizar_envio_correo_notificacion_acceso($idCliente, $cedula, $estado_bayer);
 
 echo json_encode($consulta);

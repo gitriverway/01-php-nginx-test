@@ -207,7 +207,7 @@ for ($i = 0; $i < count($lista); $i++) {
     $consultaMD = $MD->Modificar_Dependientes_Incendio($idBayer, $idDependientes, $idContrato, $listaHogares, $listaCondiciones, $contra_numero, $fecha_inicio, $fecha_fin, $estado_pago, $fechaActual, $estado_contrato, $envio_condiciones, $ruta_condiciones);
 }
 
-$ACE = new Envio_correo_notificacion_acceso();
-$consulta2 = $ACE->realizar_envio_correo_notificacion_acceso($idCliente, $cedula, $estado_bayer);
+// $ACE = new Envio_correo_notificacion_acceso();
+// $consulta2 = $ACE->realizar_envio_correo_notificacion_acceso($idCliente, $cedula, $estado_bayer);
 
 echo json_encode($consulta);

@@ -182,7 +182,7 @@ $MU = new Modelo_Bayer_Persona_Empresarial();
 $consulta = $MU->Modificar_Cliente($idBayer, $origen, $categoria, $cedula, $nombre, $telefono, $email, $provincia, $ciudad, $direccion, $ocupacion, $valor_ingreso, $valor_asegurado, $prima_total, $tipo_pago, $forma_pago, $listaColaboradores, $idUsuario, $estado_bayer, $idProducto, $fechaActual, $proveedor, $numero_contrato, $fecha_emision, $fecha_fin, $contra, $fecha_seguimiento, $listaVehiculos, $listaObservaciones, $idCliente, $prima_comisionable, $prima_neta);
 
 
-$ACE = new Envio_correo_notificacion_acceso();
-$consulta2 = $ACE->realizar_envio_correo_notificacion_acceso($idCliente, $cedula, $estado_bayer);
+// $ACE = new Envio_correo_notificacion_acceso();
+// $consulta2 = $ACE->realizar_envio_correo_notificacion_acceso($idCliente, $cedula, $estado_bayer);
 
 echo json_encode($consulta);

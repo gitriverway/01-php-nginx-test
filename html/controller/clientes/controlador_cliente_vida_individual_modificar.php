@@ -249,9 +249,9 @@ for ($i = 0; $i < count($lista); $i++) {
     $consultaMD = $MD->Modificar_Dependientes_Vida_individual($idBayer, $idDependientes, $idContrato, $listaFamiliares, $listaVehiculos, $listaCondiciones, $contra_numero, $fecha_inicio, $fecha_fin, $estado_pago, $fechaActual, $estado_contrato, $envio_condiciones, $ruta_condiciones);
 }
 
-if ($contador_contrato == 0) {
-    $ACE = new Envio_correo_notificacion_acceso();
-    $consulta2 = $ACE->realizar_envio_correo_notificacion_acceso($idCliente, $cedula, $estado_bayer);
-}
+// if ($contador_contrato == 0) {
+//     $ACE = new Envio_correo_notificacion_acceso();
+//     $consulta2 = $ACE->realizar_envio_correo_notificacion_acceso($idCliente, $cedula, $estado_bayer);
+// }
 
 echo json_encode($consulta);

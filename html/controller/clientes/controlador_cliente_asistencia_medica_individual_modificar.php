@@ -243,9 +243,9 @@ for ($i = 0; $i < count($lista); $i++) {
 
 $consulta2 = "";
 
-if ($contador_contrato == 0) {
-    $ACE = new Envio_correo_notificacion_acceso();
-    $consulta2 = $ACE->realizar_envio_correo_notificacion_acceso($idCliente, $cedula, $estado_bayer);
-}
+// if ($contador_contrato == 0) {
+//     $ACE = new Envio_correo_notificacion_acceso();
+//     $consulta2 = $ACE->realizar_envio_correo_notificacion_acceso($idCliente, $cedula, $estado_bayer);
+// }
 
 echo json_encode($consulta);
